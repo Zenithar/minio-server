@@ -1,7 +1,7 @@
 FROM sdurrheimer/alpine-glibc
 MAINTAINER Thibault NORMAND <me@zenithar.org>
 
-ADD https://dl.minio.io:9000/updates/minio/2016/Jan/linux-amd64/minio /usr/bin/minio
+ADD https://dl.minio.io/server/minio/release/linux-amd64/minio /usr/bin/minio
 ADD https://github.com/tianon/gosu/releases/download/1.7/gosu-amd64 /usr/bin/gosu
 ADD entrypoint.sh .
 
